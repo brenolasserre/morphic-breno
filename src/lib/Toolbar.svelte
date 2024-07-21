@@ -72,7 +72,6 @@ function handleKeyDown(event: KeyboardEvent) {
         currentSuggestions = topLevelOptions;
         activeIndex = 0;
 
-        // Trigger the input event to update suggestions
         contentEditable.dispatchEvent(new Event('input'));
       }
     } else if (node.nodeType === Node.ELEMENT_NODE && node.classList?.contains('optionPillValue')) {
@@ -92,7 +91,6 @@ function handleKeyDown(event: KeyboardEvent) {
       currentSuggestions = topLevelOptions;
       activeIndex = 0;
 
-      // Trigger the input event to update suggestions
       contentEditable.dispatchEvent(new Event('input'));
     }
   }
